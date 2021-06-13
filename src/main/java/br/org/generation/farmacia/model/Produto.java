@@ -16,7 +16,10 @@ public class Produto {
 	private long id;
 	
 	@NotNull
-	private String titulo;
+	private String nome;
+	
+	@NotNull
+	private String descricao;
 	
 	@NotNull
 	private double preco;
@@ -32,12 +35,12 @@ public class Produto {
 		this.id = id;
 	}
 
-	public String getTitulo() {
-		return titulo;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setTitulo(String titulo) {
-		this.titulo = titulo;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
 	public double getPreco() {
