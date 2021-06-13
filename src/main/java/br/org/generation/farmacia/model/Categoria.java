@@ -16,7 +16,7 @@ public class Categoria {
 	private long id;
 	
 	@NotNull
-	private String laboratorio;
+	private String categoria;
 	
 	@NotNull
 	private String descricao;
@@ -29,12 +29,12 @@ public class Categoria {
 		this.id = id;
 	}
 
-	public String getLaboratorio() {
-		return laboratorio;
+	public String getCategoria() {
+		return categoria;
 	}
 
-	public void setLaboratorio(String laboratorio) {
-		this.laboratorio = laboratorio;
+	public void setCategoria(String categoria) {
+		this.categoria = categoria;
 	}
 
 	public String getDescricao() {
