@@ -45,15 +45,15 @@ public class CategoriaController {
 	/*
 	 * Buscar categoria pelo nome da categoria
 	 */
-	@GetMapping("/categoria{categoria}")
-	public ResponseEntity<List<Categoria>> getByCategoria(@PathVariable String categoria) {
+	@GetMapping("/nome/{categoria}")
+	public ResponseEntity<List<Categoria>> getByNome(@PathVariable String categoria) {
 		return ResponseEntity.ok(categoriaRepository.findAllByCategoriaContainingIgnoreCase(categoria));
 	}
 
 	/*
 	 * Buscar categoria pela descrição
 	 */
-	@GetMapping("/categoria{descricao}")
+	@GetMapping("/descricao/{descricao}")
 	public ResponseEntity<List<Categoria>> getByDescricao(@PathVariable String descricao) {
 		return ResponseEntity.ok(categoriaRepository.findAllByDescricaoContainingIgnoreCase(descricao));
 	}
