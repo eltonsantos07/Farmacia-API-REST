@@ -43,6 +43,14 @@ public class Produto {
 		this.nome = nome;
 	}
 
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
 	public double getPreco() {
 		return preco;
 	}
@@ -59,6 +67,4 @@ public class Produto {
 		this.vendaSemReceita = vendaSemReceita;
 	}
 	
-	
-
 }
